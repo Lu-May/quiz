@@ -1,0 +1,20 @@
+.head {
+    color: gray;
+    background-color: black;
+    text-align: left;
+    height: 60px;
+    padding-top: 40px;
+}
+
+.headLink {
+    color: rgb(109, 109, 109);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
