@@ -1,0 +1,14 @@
+.tableLine {
+    background-color: rgb(228, 228, 228);
+    width: 97%;
+    margin-left: 20px;
+    height: 50px;
+}
+
+.orderHead {
+    font-weight: 900;
+}
+
+.inTable {
+    padding-left: 100px;
+}
