@@ -1,11 +1,5 @@
 package com.twuc.shopping.api;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.twuc.shopping.dto.OrderDto;
-import com.twuc.shopping.dto.ProductDto;
-import com.twuc.shopping.repository.OrderRepository;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
