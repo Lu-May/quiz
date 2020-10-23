@@ -1,0 +1,10 @@
+前端Tasking：
+    1.页面Header
+    2.商城页面
+        componet1:商品展示 从后端获取显示
+        componet2：购物车
+    3.订单页面
+    4.添加商品页面
+        componet1:form表单
+        componet2：comfirm按钮
+    5.页面Footer
