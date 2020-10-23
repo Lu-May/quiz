@@ -1,0 +1,31 @@
+.one-product {
+    width: 18%;
+    height: 50%;
+    margin: 20px;
+    border: 1px solid lightgray;
+    text-align: left;
+  }
+  
+  .one-product img {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+  
+  .one-product h4 {
+    margin: 15px 0 0 25px;
+    font-weight: bolder;
+    font-size: 17px;
+  }
+  
+  .one-product p {
+    margin: 0 25px;
+    color: #95a0a3;
+  }
+  
+  .one-product .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+  }
