@@ -4,10 +4,7 @@ import com.twuc.shopping.dto.OrderDto;
 import com.twuc.shopping.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
@@ -35,5 +32,11 @@ public class OrderController {
         }
         orderRepository.save(currentOrder);
         return ResponseEntity.created(URI.create("/order" + currentOrder.getId())).build();
+    }
+
+    @DeleteMapping("/order/{id}")
+    public ResponseEntity deleteOrder(@PathVariable Integer id) {
+        orderRepository.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 }
