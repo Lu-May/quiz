@@ -45,7 +45,7 @@ class Store extends Component {
           name={product.name}
           price={product.price}
           unit={product.unit}
-          imageUrl={product.imageUrl}
+          imageUrl={product.imgUrl}
           onAddProduct={this.handleAddProduct}
           isDisabled={this.state.isDisabled} />)}
       </div>
