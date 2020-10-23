@@ -1,7 +1,12 @@
 package com.twuc.shopping.api;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.twuc.shopping.dto.OrderDto;
+import com.twuc.shopping.dto.ProductDto;
+import com.twuc.shopping.repository.OrderRepository;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,12 +18,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ProductControllerTest {
+public class OrderControllerTest {
     @Autowired
     MockMvc mockMvc;
 
     @Test
-    void should_get_products_list() throws Exception {
+    public void should_get_order_list() throws Exception {
         mockMvc.perform(get("/products")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
